@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+dist/
+*.log
+
+# Test fixtures contain intentional security-pattern strings (fake API keys
+# matching real provider formats) so the audit tool can be tested against
+# them. GitHub's secret scanner trips on these prefixes regardless of how
+# clearly fake the content is. Generate locally with `npm run setup-fixtures`.
+test-fixtures/

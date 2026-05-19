@@ -1,0 +1,44 @@
+{
+  "name": "vibe-audit",
+  "version": "0.1.0",
+  "description": "Zero-config security audit CLI for AI-generated codebases.",
+  "bin": {
+    "vibe-audit": "./bin/cli.js"
+  },
+  "main": "./bin/cli.js",
+  "scripts": {
+    "setup-fixtures": "node scripts/setup-fixtures.js",
+    "test": "node scripts/setup-fixtures.js && node bin/cli.js test-fixtures/",
+    "audit": "node bin/cli.js"
+  },
+  "keywords": [
+    "security",
+    "audit",
+    "ai",
+    "lint",
+    "vibe-coding",
+    "claude",
+    "cursor",
+    "ai-generated"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atlasworksai/vibe-audit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlasworksai/vibe-audit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atlasworksai/vibe-audit/issues"
+  },
+  "author": "atlasworksai",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ]
+}
